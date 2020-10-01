@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid lightgray;
+}
+
+.dino img {
+    width: 10%;
+    position: relative;
+    top: 155px;
+    left: 30px;
+}
+
+.cactus img {
+    width: 4%;
+    position: relative;
+    top: 98px;
+    left: 500px;
+    animation: cactus 1.5s infinite ease-in-out;
+}
+
+.animateDino { 
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% { top: 155px; }
+    30% { top: 80px; }
+    70% { top: 80px; }
+    100% { top: 155px; }
+}
+
+@keyframes cactus {
+    0% { left: 500px; }
+    100% { left: -50px; }
+}
+
+label {
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: lightsalmon;
+    padding: 3rem;
+    position: relative;
+    left: 25%;
+    right: auto;
+    top: -25px;
+    opacity: 0;
+}
+
+footer {
+    position: relative;
+    top: 20px;
+}
